@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923636781E84BDA20079467B /* MyOSSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 923636771E84BDA20079467B /* MyOSSClient.m */; };
 		92C6B2A41E84A73D00DFF019 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C6B2A31E84A73D00DFF019 /* main.m */; };
 		92C6B2A71E84A73D00DFF019 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C6B2A61E84A73D00DFF019 /* AppDelegate.m */; };
 		92C6B2AA1E84A73D00DFF019 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C6B2A91E84A73D00DFF019 /* ViewController.m */; };
 		92C6B2AD1E84A73D00DFF019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C6B2AB1E84A73D00DFF019 /* Main.storyboard */; };
 		92C6B2AF1E84A73D00DFF019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C6B2AE1E84A73D00DFF019 /* Assets.xcassets */; };
 		92C6B2B21E84A73D00DFF019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C6B2B01E84A73D00DFF019 /* LaunchScreen.storyboard */; };
+		92C6B2BA1E84A7FA00DFF019 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C6B2B91E84A7FA00DFF019 /* libresolv.tbd */; };
+		92C6B2BC1E84A80B00DFF019 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C6B2BB1E84A80B00DFF019 /* SystemConfiguration.framework */; };
+		CBEAAB1474DFCFA2004EFB15 /* libPods-Aliyun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3D6490F1F8DCBF51F051C3 /* libPods-Aliyun.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		923636761E84BDA20079467B /* MyOSSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOSSClient.h; sourceTree = "<group>"; };
+		923636771E84BDA20079467B /* MyOSSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOSSClient.m; sourceTree = "<group>"; };
 		92C6B29F1E84A73D00DFF019 /* Aliyun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aliyun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C6B2A31E84A73D00DFF019 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92C6B2A51E84A73D00DFF019 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,11 @@
 		92C6B2AE1E84A73D00DFF019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92C6B2B11E84A73D00DFF019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92C6B2B31E84A73D00DFF019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92C6B2B91E84A7FA00DFF019 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		92C6B2BB1E84A80B00DFF019 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A0C85FE0D2FA17504D8A2C2A /* Pods-Aliyun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aliyun.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aliyun/Pods-Aliyun.release.xcconfig"; sourceTree = "<group>"; };
+		BE666AFC1C52830E4DC7A35C /* Pods-Aliyun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aliyun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aliyun/Pods-Aliyun.debug.xcconfig"; sourceTree = "<group>"; };
+		EC3D6490F1F8DCBF51F051C3 /* libPods-Aliyun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aliyun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +44,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C6B2BC1E84A80B00DFF019 /* SystemConfiguration.framework in Frameworks */,
+				92C6B2BA1E84A7FA00DFF019 /* libresolv.tbd in Frameworks */,
+				CBEAAB1474DFCFA2004EFB15 /* libPods-Aliyun.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CCD6079A31F84D76EED5EA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92C6B2BB1E84A80B00DFF019 /* SystemConfiguration.framework */,
+				92C6B2B91E84A7FA00DFF019 /* libresolv.tbd */,
+				EC3D6490F1F8DCBF51F051C3 /* libPods-Aliyun.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92C6B2961E84A73D00DFF019 = {
 			isa = PBXGroup;
 			children = (
 				92C6B2A11E84A73D00DFF019 /* Aliyun */,
 				92C6B2A01E84A73D00DFF019 /* Products */,
+				92D5033A231CB71C20107D36 /* Pods */,
+				1CCD6079A31F84D76EED5EA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,8 @@
 				92C6B2A61E84A73D00DFF019 /* AppDelegate.m */,
 				92C6B2A81E84A73D00DFF019 /* ViewController.h */,
 				92C6B2A91E84A73D00DFF019 /* ViewController.m */,
+				923636761E84BDA20079467B /* MyOSSClient.h */,
+				923636771E84BDA20079467B /* MyOSSClient.m */,
 				92C6B2AB1E84A73D00DFF019 /* Main.storyboard */,
 				92C6B2AE1E84A73D00DFF019 /* Assets.xcassets */,
 				92C6B2B01E84A73D00DFF019 /* LaunchScreen.storyboard */,
@@ -79,6 +107,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		92D5033A231CB71C20107D36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE666AFC1C52830E4DC7A35C /* Pods-Aliyun.debug.xcconfig */,
+				A0C85FE0D2FA17504D8A2C2A /* Pods-Aliyun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C6B2B61E84A73D00DFF019 /* Build configuration list for PBXNativeTarget "Aliyun" */;
 			buildPhases = (
+				198266FAF0D90E4650FDDE73 /* [CP] Check Pods Manifest.lock */,
 				92C6B29B1E84A73D00DFF019 /* Sources */,
 				92C6B29C1E84A73D00DFF019 /* Frameworks */,
 				92C6B29D1E84A73D00DFF019 /* Resources */,
+				43F1719879CEB4F3CCBEA942 /* [CP] Embed Pods Frameworks */,
+				F22F5B4F6B9D725EBF86A1D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +186,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		198266FAF0D90E4650FDDE73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43F1719879CEB4F3CCBEA942 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aliyun/Pods-Aliyun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F22F5B4F6B9D725EBF86A1D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aliyun/Pods-Aliyun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92C6B29B1E84A73D00DFF019 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -153,6 +241,7 @@
 			files = (
 				92C6B2AA1E84A73D00DFF019 /* ViewController.m in Sources */,
 				92C6B2A71E84A73D00DFF019 /* AppDelegate.m in Sources */,
+				923636781E84BDA20079467B /* MyOSSClient.m in Sources */,
 				92C6B2A41E84A73D00DFF019 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +358,7 @@
 		};
 		92C6B2B71E84A73D00DFF019 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE666AFC1C52830E4DC7A35C /* Pods-Aliyun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X36P6J44B6;
@@ -281,6 +371,7 @@
 		};
 		92C6B2B81E84A73D00DFF019 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C85FE0D2FA17504D8A2C2A /* Pods-Aliyun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X36P6J44B6;
@@ -310,6 +401,7 @@
 				92C6B2B81E84A73D00DFF019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
