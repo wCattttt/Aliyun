@@ -8,9 +8,9 @@
 
 #import "MyOSSClient.h"
 
-NSString *const endPoint = @"https://oss-cn-shenzhen.aliyuncs.com";
-NSString *const AccessKey = @"LTAIQtPpBNSOCDSI";
-NSString *const SecretKey = @"LBHib2qI9827uFyzBhprWsdprCY9WO";
+NSString *const endPoint = @"填写<endpoint>";
+NSString *const AccessKey = @"<AccessKey>";
+NSString *const SecretKey = @"<SecretKey>";
 
 @implementation MyOSSClient
 + (instancetype)sharedInstance {

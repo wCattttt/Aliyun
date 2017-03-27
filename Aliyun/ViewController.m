@@ -30,8 +30,8 @@ typedef enum {
 }
 @end
 
-NSString *const bucketName = @"sanzangshouyou";
-NSString * const multipartUploadKey = @"multipartUploadObject";
+NSString *const bucketName = @"<填写bucketName>";
+NSString * const multipartUploadKey = @"<上传到云的文件名>";
 
 @implementation ViewController
 
