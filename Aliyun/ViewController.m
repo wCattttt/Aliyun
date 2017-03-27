@@ -245,7 +245,7 @@ NSString * const multipartUploadKey = @"multipartUploadObject";
 - (void)uploadPartObjectAsync:(NSArray *)datas {
     dispatch_group_t group = dispatch_group_create();
     // 分片上传
-    for (int i = 0; i < datas.count; i++) {
+    for (int i = 1; i <= datas.count; i++) {
         dispatch_group_enter(group);
         
         OSSUploadPartRequest * uploadPart = [OSSUploadPartRequest new];
@@ -254,7 +254,7 @@ NSString * const multipartUploadKey = @"multipartUploadObject";
         uploadPart.uploadId = _uploadId;
         uploadPart.partNumber = i; // part number start from 1
         
-        uploadPart.uploadPartData = datas[i];
+        uploadPart.uploadPartData = datas[i-1];
         
         OSSTask * uploadPartTask = [_client uploadPart:uploadPart];
         
